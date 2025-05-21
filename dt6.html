@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+
+    <header>
+ <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+</div>
+
+      <!-- Navigation Links -->
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn">Sessions</a>
+                <div class="dropdown-content">
+                    <a href="dt3.html">Class 3</a>
+                    <a href="dt4.html">Class 4</a>
+                    <a href="dt5.html">Class 5</a>
+                    <a href="dt6.html">Class 6</a>
+                    <a href="dt7.html">Class 7</a>
+                    <a href="dt8.html">Class 8</a>
+                    <a href="2nd sem.html">2nd Sem Class 1</a>
+                    <a href="class 2.html">Class 2</a>
+                </div>
+            </div>
+            
+            <a href="presentations.html">Presentations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Team</a>
+        </nav>
+    </header>
+    <h1 style="color: white; font-size: 36px;margin-left:40px; text-align: center;">Design Thinking  - Class 6 : How Might We </h1>
+    <br><br>
+
+    <div style="display: flex; align-items: center;">
+        <img src="how11.png" alt="Image" style="height: 270px; margin-right: 70px;margin-left: 420px;">
+       
+      </div>
+
+      <div style="display: flex; align-items: center; padding: 70px;">
+      <p style="font-size: 20px;">Our team, 'TITANS' has begun working on a task focused on 'How Might We' questions. This involves framing questions using 'How Might We Statement' exploring possible solutions, and understanding the reasons behind them. During the session, Vignesh Sir explained the process in detail, helping us grasp the concept more effectively. With his guidance, we are now brainstorming different ideas, discussing various possibilities, and identifying key problems. This activity is not only enhancing our problem-solving skills but also encouraging us to think more creatively and critically.<br><br>
+        
+        At first, it seemed difficult, but step by step, we figured it out and got it done. Challenges tested us, but we stayed determined and kept moving forward. In the end, all the effort paid off, and we successfully completed the task.
+      </p>
+     </div>
+    
+
+      <div class="footer">
+        <p>&copy; TITANS</p>
+      </div>
+<br><br><br><br>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+   
+   <!-- sessions dropdown java -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdown = document.querySelector('.dropdown');
+        
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+<!-- sessions dropdown java ends -->
+</body>
+</html>

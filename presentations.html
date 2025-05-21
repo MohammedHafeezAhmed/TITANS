@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+ <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+</div>
+
+      <!-- Navigation Links -->
+         <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn">Sessions</a>
+                <div class="dropdown-content">
+                    <a href="dt3.html">Class 3</a>
+                    <a href="dt4.html">Class 4</a>
+                    <a href="dt5.html">Class 5</a>
+                    <a href="dt6.html">Class 6</a>
+                    <a href="dt7.html">Class 7</a>
+                    <a href="dt8.html">Class 8</a>
+                    <a href="2nd sem.html">2nd Sem Class 1</a>
+                    <a href="class 2.html">Class 2</a>
+                </div>
+            </div>
+            
+            <a href="presentations.html">Presentations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Team</a>
+        </nav>
+    </header>
+
+<div class="square-box">
+    <!-- PDF Viewer Section -->
+
+<div id="pdfViewer">
+    <h2 class="pdf-heading">PRESENTATION BY TEAM TITANS</h2>
+
+    <iframe id="pdfFrame" src="DT Presentation.pdf#view=Fit" width="100%" height="600px"></iframe>
+    
+    <!-- Control Buttons -->
+    <div class="pdf-controls">
+        <!-- <button onclick="goToPage('prev')">⏪ Previous</button>
+        <button onclick="playPause()">⏯ Play/Pause</button>
+        <button onclick="goToPage('next')">⏩ Next</button> -->
+        <button onclick="viewFullScreen()">🔍 Full Screen</button>
+
+    </div>
+</div>
+
+
+    <!-- <p class="text">This is some text beside the image. You can change this text to whatever you like!</p> -->
+
+
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+   <script>
+    let lastScrollTop = 0;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop === 0) {
+            // At the very top of the page, show the navbar
+            header.style.top = "0";
+        } else if (scrollTop > lastScrollTop) {
+            // Scrolling down, hide the navbar
+            header.style.top = "-80px"; // Adjust this based on header height
+        } 
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+<script>
+    let pdfPlaying = false;
+    let currentPage = 1;
+    const totalPages = 10; // Set this to the number of pages in your PDF
+
+    function goToPage(action) {
+        if (action === 'next' && currentPage < totalPages) {
+            currentPage++;
+        } else if (action === 'prev' && currentPage > 1) {
+            currentPage--;
+        }
+        document.getElementById('pdfFrame').src = `your-pdf-file.pdf#page=${currentPage}`;
+    }
+
+    function playPause() {
+        pdfPlaying = !pdfPlaying;
+        if (pdfPlaying) {
+            playPDF();
+        } else {
+            clearInterval(playInterval);
+        }
+    }
+
+    let playInterval;
+    function playPDF() {
+        playInterval = setInterval(() => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                document.getElementById('pdfFrame').src = `your-pdf-file.pdf#page=${currentPage}`;
+            } else {
+                clearInterval(playInterval); // Stop at the last page
+                pdfPlaying = false;
+            }
+        }, 2000); // Adjust delay as needed
+    }
+</script>
+<script>
+    function viewFullScreen() {
+        const pdfFrame = document.getElementById('pdfFrame');
+        if (pdfFrame.requestFullscreen) {
+            pdfFrame.requestFullscreen();
+        } else if (pdfFrame.mozRequestFullScreen) { // Firefox
+            pdfFrame.mozRequestFullScreen();
+        } else if (pdfFrame.webkitRequestFullscreen) { // Chrome, Safari, Opera
+            pdfFrame.webkitRequestFullscreen();
+        } else if (pdfFrame.msRequestFullscreen) { // IE/Edge
+            pdfFrame.msRequestFullscreen();
+        }
+    }
+</script>
+
+<!-- sessions dropdown java -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdown = document.querySelector('.dropdown');
+        
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+<!-- sessions dropdown java ends -->
+<div class="footer">
+    <p>&copy;TITANS</p>
+  </div>
+<br><br><br><br>
+</body> 
+</html>
+

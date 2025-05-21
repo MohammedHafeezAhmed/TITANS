@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+
+    <header>
+ <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+</div>
+
+      <!-- Navigation Links -->
+       <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn">Sessions</a>
+                <div class="dropdown-content">
+                    <a href="dt3.html">Class 3</a>
+                    <a href="dt4.html">Class 4</a>
+                    <a href="dt5.html">Class 5</a>
+                    <a href="dt6.html">Class 6</a>
+                    <a href="dt7.html">Class 7</a>
+                    <a href="dt8.html">Class 8</a>
+                    <a href="2nd sem.html">2nd Sem Class 1</a>
+                    <a href="class 2.html">Class 2</a>
+                </div>
+            </div>
+            
+            <a href="presentations.html">Presentations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Team</a>
+        </nav>
+    </header>
+    <h1 style="color: white; font-size: 36px;margin-left:40px; text-align: center;">Design Thinking  - Class 7 </h1>
+    <br><br>
+
+    <div style="display: flex; align-items: center;">
+        <img src="prototypeoutline.png" alt="Image" style="height: 370px; margin-right: 70px;margin-left: 420px;">
+       
+      </div>
+
+      <div style="display: flex; align-items: center; padding: 70px;">
+      <p style="font-size: 20px;">"Previous Class, we completed the base of our project by finding issues and ways to fix them, though each solution had its own challenges. After that, we moved ahead to plan and outline our ideas."<br><br>
+
+        "At the beginning, we were asked to outline our project ideas on the board. Hari Sir selected a topic from one of the 'How Might We' questions for us to work on. Since it was not our chosen topic, we initially found it challenging, but we started discussing different possibilities and exploring various ways to approach the problem. As we progressed, we gained clarity and structured our ideas effectively. Later, we were guided to transform our ideas into a website or an app, which helped us develop a more practical and innovative solution."</p>
+     </div>
+    
+
+
+
+
+      <div class="footer">
+        <p>&copy;TITANS</p>
+      </div>
+<br><br><br><br>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+   
+   <!-- sessions dropdown java -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdown = document.querySelector('.dropdown');
+        
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+<!-- sessions dropdown java ends -->
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+
+    <header>
+ <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+</div>
+
+      <!-- Navigation Links -->
+          <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn">Sessions</a>
+                <div class="dropdown-content">
+                    <a href="dt3.html">Class 3</a>
+                    <a href="dt4.html">Class 4</a>
+                    <a href="dt5.html">Class 5</a>
+                    <a href="dt6.html">Class 6</a>
+                    <a href="dt7.html">Class 7</a>
+                    <a href="dt8.html">Class 8</a>
+                    <a href="2nd sem.html">2nd Sem Class 1</a>
+                    <a href="class 2.html">Class 2</a>
+                </div>
+            </div>
+            
+            <a href="presentations.html">Presentations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Team</a>
+        </nav>
+    </header>
+    <h1 style="color: white; font-size: 36px;margin-left:40px; text-align: center;">Design Thinking  - Class 5 </h1>
+    <br><br>
+
+    <div style="display: flex; align-items: center;">
+        <img src="lack11.png" alt="Image" style="height: 270px; margin-right: 50px;margin-left: 180px;">
+    
+        <img src="whyweb.png" alt="Image" style="height: 270px; margin-right: 70px;margin-left: 80px;">
+       
+      </div>
+
+      <div style="display: flex; align-items: center; padding: 70px;">
+      <p style="font-size: 20px;">Today's session was conducted by Vignesh Sir. The class was very fun and exciting as he guided us through the topics we needed to prepare with our team. The main topic was "Why Web", along with other secondary research areas. He explained everything in a simple and interesting way, which made learning enjoyable. Our team quickly started thinking of ideas, discussing them, and working together. Everyone was very active and focused. We made sure to divide the tasks so that we could finish everything on time. It felt really good to complete our work without any delay. The session also helped us **understand things better and learn new ways to research. Vignesh Sir also cleared our doubts, making it easier for us to move forward. Overall, it was a great learning experience**, and we really enjoyed the session.</p>
+     </div>
+    
+
+
+
+
+      <div class="footer">
+        <p>&copy; TITANS</p>
+      </div>
+<br><br><br><br>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+   
+   <!-- sessions dropdown java -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdown = document.querySelector('.dropdown');
+        
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+<!-- sessions dropdown java ends -->
+</body>
+</html>

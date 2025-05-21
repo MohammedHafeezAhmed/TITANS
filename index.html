@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+   
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Ahmed
+        <button class="day-night-toggle"></button> <!-- Day-Night toggle button -->
+        </a>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+    
+        <!-- Navigation Links -->
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn">Sessions</a>
+                <div class="dropdown-content">
+                    <a href="dt3.html">Class 3</a>
+                    <a href="dt4.html">Class 4</a>
+                    <a href="dt5.html">Class 5</a>
+                    <a href="dt6.html">Class 6</a>
+                    <a href="dt7.html">Class 7</a>
+                    <a href="dt8.html">Class 8</a>
+                    <a href="2nd sem.html">2nd Sem Class 1</a>
+                    <a href="class 2.html">Class 2</a>
+                </div>
+            </div>
+            
+            <a href="presentations.html">Presentations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Team</a>
+        </nav>
+        
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Ahmed</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p style="font-size: 3rem; font-weight: bold;">"Designing with style, coding with purpose."</p>
+<br>
+<br>
+               <p> Explore my work, or connect to share ideas. Let's create something amazing together!</p>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://mohammedhafeezahmed.github.io/Designs/"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">About Me</a>
+        </div>
+    </section>
+
+   
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+   
+<!-- sessions dropdown java -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdown = document.querySelector('.dropdown');
+        
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+<!-- sessions dropdown java ends -->
+<div class="footer">
+    <p>&copy; MHA01 TITANS</p>
+  </div>
+<br><br><br><br>
+
+</body> 
+</html>

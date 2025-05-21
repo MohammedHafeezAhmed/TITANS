@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+
+    <header>
+ <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+</div>
+
+      <!-- Navigation Links -->
+          <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn">Sessions</a>
+                <div class="dropdown-content">
+                    <a href="dt3.html">Class 3</a>
+                    <a href="dt4.html">Class 4</a>
+                    <a href="dt5.html">Class 5</a>
+                    <a href="dt6.html">Class 6</a>
+                    <a href="dt7.html">Class 7</a>
+                    <a href="dt8.html">Class 8</a>
+                    <a href="2nd sem.html">2nd Sem Class 1</a>
+                    <a href="class 2.html">Class 2</a>
+                </div>
+            </div>
+            
+            <a href="presentations.html">Presentations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Team</a>
+        </nav>
+    </header>
+    <h1 style="color: white; font-size: 36px;margin-left:40px; text-align: center;">Design Thinking  - 2nd Sem Class 1 </h1>
+    <br><br>
+
+    <div style="display: flex; align-items: center;">
+        <img src="vpc.jpg" alt="Image" style="height: 270px; margin-right: 70px;margin-left: 420px;">
+       
+      </div>
+
+      <div style="display: flex; align-items: center; padding: 70px;">
+      <p style="font-size: 20px;">"Today was our first Design Thinking class of the second semester. I was quite excited because I knew some teams would reshuffle—new people might join our team, and others might leave. Once the class began, sir gave us a quick recap of everything we had covered in the first semester. After that, he asked if anyone wanted to switch teams. Quite a few did. and as my team was not coperative i decided to move another team and i choose kavin raja's team named "Revolutionary army" and now i'm excited to work in there team ... </p>
+     </div>
+    
+<h3 style="text-align: center; font-size: 28px; color: red;">Learnt in first semester! :</h3><br><br>
+<div style="text-align: center; font-size: 20px;">
+  <ol style="display: inline-block; text-align: left;">
+    <li><b>Empathize</b> – Observe, gain insights, and understand the problem.</li><br>
+    <li><b>Define</b> – Frame the problem using “How might we...” statements.</li><br>
+    <li><b>Ideate</b> – Brainstorming to generate ideas and understand the value of the problem.</li><br>
+    <li><b>Prototype</b> – Create a Proof of Concept (POC), then a low-fidelity prototype, and eventually a Minimum Viable Product (MVP).</li><br>
+    <li><b>Test</b> – Evaluate the prototype and gather feedback.</li>
+  </ol>
+</div>
+<br><br><br><br><br><br>
+<h3 style="text-align: center; font-size: 28px; color: red;">Stakeholder Mapping:<br>
+Creator – The one who creates the problem, either directly or indirectly.<br>
+Victim – The one who is impacted by the problem.</h3><br><br>
+
+<br><br><br>
+<h3 style="text-align: center; font-size: 28px; color: rgb(115, 255, 0);">Design Thinking is a human-centered problem-solving approach.</h3><br><br>
+
+
+<br><br><br>
+<h2 style="text-align: center; font-size: 24px; color: rgb(0, 38, 255);">Empathy Map – Helps empathize with the user by identifying what they:<br>
+See
+Feel
+Think
+Hear
+Do
+Fear
+Experience as pain or gain.</h2><br><br>
+
+<h3 style="text-align: center; font-size: 28px; color: rgb(115, 255, 0);">Why Web – Used for root cause analysis.</h3><br><br>
+
+<h3 style="text-align: center; font-size: 28px; color: rgb(255, 0, 0);">HMW (How Might We) – Focuses on action, purpose, and stakeholder empathy.</h3><br><br>
+
+
+<div style="text-align: center; font-size: 20px;">
+  <ol style="display: inline-block; text-align: left;">
+    <li><b>Three Factors to Consider in Design Thinking:</b> </li><br>
+    <li><b>Desirability (Human-centered)</b> </li><br>
+    <li><b>Viability (Business/Financial)</b></li><br>
+    <li><b>Feasibility (Technological)</b></li><br>
+  </ol>
+</div>
+
+
+
+      <div class="footer">
+        <p>&copy;TITANS</p>
+      </div>
+<br><br><br><br>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+   
+   <!-- sessions dropdown java -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdown = document.querySelector('.dropdown');
+        
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+<!-- sessions dropdown java ends -->
+</body>
+</html>

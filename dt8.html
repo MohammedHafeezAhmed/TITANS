@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+
+    <header>
+ <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+</div>
+
+      <!-- Navigation Links -->
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn">Sessions</a>
+                <div class="dropdown-content">
+                    <a href="dt3.html">Class 3</a>
+                    <a href="dt4.html">Class 4</a>
+                    <a href="dt5.html">Class 5</a>
+                    <a href="dt6.html">Class 6</a>
+                    <a href="dt7.html">Class 7</a>
+                    <a href="dt8.html">Class 8</a>
+                    <a href="2nd sem.html">2nd Sem Class 1</a>
+                    <a href="class 2.html">Class 2</a>
+                </div>
+            </div>
+            
+            <a href="presentations.html">Presentations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Team</a>
+        </nav>
+    </header>
+    <h1 style="color: white; font-size: 36px;margin-left:40px; text-align: center;">Design Thinking  - Class 8 </h1>
+    <br><br>
+
+    <div style="display: flex; align-items: center;">
+        <img src="prototype.png" alt="Image" style="height: 270px; margin-right: 70px;margin-left: 420px;">
+       
+      </div>
+
+      <div style="display: flex; align-items: center; padding: 70px;">
+      <p style="font-size: 20px;">"In this class, sir asked us to continue working on our project and get it ready for submission. Our project focuses on creating a website for digital attendance and marks management, making it more advanced and user-friendly. We worked on improving different features, such as recording attendance, entering marks, and organizing data efficiently. Instead of using traditional methods, our website will help teachers save time and reduce errors. We also explored ways to enhance the interface, ensuring it is easy for users to navigate. During the session, we discussed various improvements and shared ideas with each other. <br><br>Some parts of the website were challenging, but we managed to solve them step by step. We also reviewed how data could be stored securely for future use. By the end of the class, we had made 70% of the project successfully. And we were confident that within next class we will be completed with our work".<br><br>
+      That day will be paying out our proud team (TITANS) hardwork and Brain Burst Ideas into action.... </p>
+     </div>
+    
+
+
+
+
+      <div class="footer">
+        <p>&copy;TITANS</p>
+      </div>
+<br><br><br><br>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+   
+   <!-- sessions dropdown java -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdown = document.querySelector('.dropdown');
+        
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+<!-- sessions dropdown java ends -->
+</body>
+</html>

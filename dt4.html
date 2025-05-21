@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+
+    <header>
+ <!-- Hamburger Icon -->
+ <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+</div>
+
+      <!-- Navigation Links -->
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropbtn">Sessions</a>
+                <div class="dropdown-content">
+                    <a href="dt3.html">Class 3</a>
+                    <a href="dt4.html">Class 4</a>
+                    <a href="dt5.html">Class 5</a>
+                    <a href="dt6.html">Class 6</a>
+                    <a href="dt7.html">Class 7</a>
+                    <a href="dt8.html">Class 8</a>
+                    <a href="2nd sem.html">2nd Sem Class 1</a>
+                    <a href="class 2.html">Class 2</a>
+                </div>
+            </div>
+            
+            <a href="presentations.html">Presentations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Team</a>
+        </nav>
+    </header>
+    <h1 style="color: white; font-size: 36px;margin-left:40px; text-align: center;">Design Thinking  - Class 4 : </h1>
+    <br><br>
+
+    <div style="display: flex; align-items: center;">
+        <img src="whytree1.png" alt="Image" style="height: 470px; margin-right: 70px;margin-left: 420px;">
+       
+      </div>
+
+      <div style="display: flex; align-items: center; padding: 70px;">
+      <p style="font-size: 20px;">Today's Design Thinking (DT) class was shorter than usual because of the Kannada Rajyotsava festival. Many students were absent due to the celebration. During the class, the teacher gave us an extra topic to work on, called "Why Tree?". We were asked to do some secondary research on this topic and submit our findings in the next class.  
+
+        After receiving the assignment, we started discussing how to approach the research and shared different ideas on how to gather information. The teacher also gave us a few examples to help us understand the topic better. This made it easier for us to plan our work and divide tasks among ourselves. Even though the class was short, we made good progress in organizing our research.</p>
+     </div>
+
+
+     <h2 style="color: white; font-size: 26px; text-align: left; margin-left: 60px;">Understanding "Why Tree?" in Design Thinking </h2>
+     <div style="display: flex; align-items: center; padding: 70px;">
+        <ul style="font-size: 20px; list-style-type: none; padding: 0;">
+            <li>The Why Tree is a way to break down a problem or understand a concept by mapping out different reasons behind it. Just like a tree has roots, a trunk, and branches, the Why Tree helps in:</li> <BR>
+            <li> Identifying the core problem (roots)</li>
+            <li>Understanding key factors influencing it (trunk)</li>
+            <li>Exploring different possible solutions (branches)</li>
+        </ul>
+    </div>
+    
+       <h2 style="color: white; font-size: 26px; text-align: left; margin-left: 60px;">💡 Why is the Why Tree Important in Design Thinking? </h2>
+       <div style="display: flex; align-items: center; padding: 70px;">
+        <ul style="font-size: 20px; list-style-type: none; padding: 0;">
+            <li>✔ Encourages deeper thinking instead of surface-level solutions.</li>
+            <li>✔ Finds the real cause behind a problem.</li>
+            <li>✔ Leads to more innovative and effective solutions.</li>
+            <li>✔ Helps teams brainstorm by visually organizing ideas.</li>
+        </ul>
+    </div>
+    
+
+
+
+
+      <div class="footer">
+        <p>&copy;TITANS</p>
+      </div>
+<br><br><br><br>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+   
+   <!-- sessions dropdown java -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdown = document.querySelector('.dropdown');
+        
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+<!-- sessions dropdown java ends -->
+</body>
+</html>
